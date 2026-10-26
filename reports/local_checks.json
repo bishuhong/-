@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "masked_examples": 180,
+  "checks": [
+    "data hashes and split isolation",
+    "all source samples fit max_length",
+    "final-answer-only loss mask",
+    "end-of-turn supervision",
+    "overlength fails rather than truncates",
+    "unreviewed DPO gate",
+    "perfect and invalid structured-metric fixtures",
+    "malformed JSON types handled"
+  ],
+  "not_run": [
+    "8B forward/backward",
+    "CUDA QLoRA training",
+    "cloud GPU peak-memory measurement"
+  ],
+  "reason": "Local validation uses tokenizer only; full GPU training must run on cloud."
+}

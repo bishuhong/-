@@ -1,0 +1,8 @@
+.venv/
+.idea/
+__pycache__/
+models/
+outputs/
+work/
+*.log
+/Tweak.zip

@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "train": 120,
+    "validation": 30,
+    "test": 30
+  },
+  "families": 36,
+  "train_families": 24,
+  "sha256": {
+    "train": "3d59d72073137082871fdcde30d3a3556cd3fab6676c9cc2523d691eae34d584",
+    "validation": "d7548c25b79cd2f0a3d25870b08ade511e08eba92440ad8ea0b81b3b71a7086c",
+    "test": "977b4dc0c60ac17361718a71e251defd26c53cb394838a5ab58b96617ccaa60f"
+  },
+  "limitations": [
+    "180 synthetic examples, only 36 scenario families; not production evidence.",
+    "DPO requires preference pairs; existing data is SFT only."
+  ],
+  "dpo": {
+    "train": {
+      "count": 120,
+      "reviewed": 0
+    },
+    "validation": {
+      "count": 30,
+      "reviewed": 0
+    },
+    "test": {
+      "count": 30,
+      "reviewed": 0
+    }
+  },
+  "token_lengths": {
+    "train": {
+      "max": 623,
+      "mean": 516.05
+    },
+    "validation": {
+      "max": 643,
+      "mean": 523.2333333333333
+    },
+    "test": {
+      "max": 573,
+      "mean": 531.2666666666667
+    }
+  }
+}

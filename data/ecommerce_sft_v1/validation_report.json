@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "total": 180,
+  "multi_turn": 25,
+  "samples_with_business_context": 45,
+  "scenario_families_by_split": {
+    "train": 24,
+    "validation": 6,
+    "test": 6
+  },
+  "checks": [
+    "JSON和消息结构",
+    "结构化标签及引用来源",
+    "金额格式及优惠计算",
+    "Alpaca转换保留历史和上下文",
+    "场景族隔离",
+    "集合内及集合间精确输入去重",
+    "关键流程边界",
+    "标注与行号对齐"
+  ],
+  "sha256": {
+    "train.jsonl": "3d59d72073137082871fdcde30d3a3556cd3fab6676c9cc2523d691eae34d584",
+    "validation.jsonl": "d7548c25b79cd2f0a3d25870b08ade511e08eba92440ad8ea0b81b3b71a7086c",
+    "test.jsonl": "977b4dc0c60ac17361718a71e251defd26c53cb394838a5ab58b96617ccaa60f"
+  },
+  "not_verified": [
+    "真实业务效果",
+    "人工专家标签审定",
+    "具体训练框架与模型的运行兼容性"
+  ]
+}

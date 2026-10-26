@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "seed": 20261024,
+  "total": 180,
+  "splits": {
+    "train": 120,
+    "validation": 30,
+    "test": 30
+  },
+  "categories": {
+    "订单物流": 30,
+    "订单修改": 30,
+    "退款售后": 30,
+    "商品咨询": 30,
+    "优惠支付": 30,
+    "异常升级": 30
+  },
+  "scenario_families": 36,
+  "instances_per_family": 5,
+  "multi_turn": 25,
+  "split_method": "whole_scenario_family_holdout_stratified_by_category",
+  "limitations": [
+    "合成起步集，非真实客服记录，未经业务专家审定",
+    "同一场景内五条为参数化扩充，并非180个独立业务情境",
+    "各集合场景族隔离，但共享系统提示与输出模式，测试集不是独立真实业务评测"
+  ]
+}
